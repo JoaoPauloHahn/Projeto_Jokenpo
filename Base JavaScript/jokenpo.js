@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
+const fileSystem = require('../File System/fileSystem');
 
 var tiposDeJogadas = ["Pedra", "Papel", "Tesoura"];
 var nomeJogador = prompt("Digite seu nome: ");
@@ -8,23 +9,32 @@ var posicaoJogadaMaquina = Math.floor(Math.random() * tiposDeJogadas.length);
 console.log("Jogada da máquina:", tiposDeJogadas[posicaoJogadaMaquina]);
 
 if(jogadaJogador == tiposDeJogadas[posicaoJogadaMaquina]){
-    console.log("Empate");
+    var ganhador = "Empate";
+    console.log("Ganhador: ", ganhador);   
 }
 else if(jogadaJogador == "Pedra" && tiposDeJogadas[posicaoJogadaMaquina] == "Tesoura"){
-    console.log("Jogador Ganhou");
+    ganhador = "Jogador";
+    console.log("Ganhador: ", ganhador);   
 }
 else if(tiposDeJogadas[posicaoJogadaMaquina] == "Pedra" && jogadaJogador == "Tesoura"){
-    console.log("Máquina Ganhou");
+    ganhador = "Máquina";
+    console.log("Ganhador: ", ganhador);    
 }
 else if(jogadaJogador == "Tesoura" && tiposDeJogadas[posicaoJogadaMaquina] == "Papel"){
-    console.log("Jogador Ganhou");
+    ganhador = "Jogador";
+    console.log("Ganhador: ", ganhador);   
 }
 else if(tiposDeJogadas[posicaoJogadaMaquina] == "Tesoura" && jogadaJogador == "Papel"){
-    console.log("Máquina Ganhou");
+    ganhador = "Máquina";
+    console.log("Ganhador: ", ganhador);   
 }
 else if(jogadaJogador == "Papel" && tiposDeJogadas[posicaoJogadaMaquina] == "Pedra"){
-    console.loog("Jogador Ganhou");
+    ganhador = "Jogador";
+    console.log("Ganhador: ", ganhador);   
 }
 else if(tiposDeJogadas[posicaoJogadaMaquina] == "Papel" && jogadaJogador == "Pedra"){
-    console.log("Máquina Ganhou");
+    ganhador = "Máquina";
+    console.log("Ganhador: ", ganhador);   
 }
+
+fileSystem.criarArquivo(nomeJogador, jogadaJogador, tiposDeJogadas[posicaoJogadaMaquina], ganhador);
