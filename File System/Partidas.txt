@@ -2,3 +2,10 @@ Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Papel Ganhador: 
 Nome Jogador: Joao Jogada do Jogador: Papel Jogada da Máquina: Tesoura Ganhador: Máquina 8:39:59
 Nome Jogador: Joao Jogada do Jogador: Tesoura Jogada da Máquina: Papel Ganhador: Jogador 8:40:3
 Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate 8:41:34
+Nome Jogador: Joao Jogada do Jogador: Pedro Jogada da Máquina: Papel Ganhador: undefined 9:46:37
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Papel Ganhador: Máquina 14:57:37
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Papel Ganhador: Máquina 14:58:8
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Tesoura Ganhador: Jogador 14:58:52
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate 15:1:28
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate 15:2:34
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate 15:2:53
