@@ -10,6 +10,7 @@
     "concat-map": "^0.0.1",
     "copy-to": "^2.0.1",
     "escape-html": "^1.0.3",
+    "fs": "^0.0.1-security",
     "fs.realpath": "^1.0.0",
     "function-bind": "^1.1.1",
     "glob": "^7.2.3",
@@ -29,7 +30,6 @@
     "utility": "^1.6.0",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "ppt": "node ../Base_JavaScript/jokenpo.js"
   },
