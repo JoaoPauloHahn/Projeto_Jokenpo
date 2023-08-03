@@ -23,3 +23,7 @@ Nome Jogador: Joao Jogada do Jogador: Papel Jogada da Máquina: Papel Ganhador: 
 Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Papel Ganhador: Máquina 20:46:49
 Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate 20:47:22
 Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Tesoura Ganhador: Jogador 20:47:57
+Nome Jogador: Joao Jogada do Jogador: Tesoura Jogada da Máquina: Tesoura Ganhador: Empate 22:0:53
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate Horário da Partida: 2023-08-03T01:08:34.047Z
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Pedra Ganhador: Empate Horário da Partida: 2023-08-03T01:09:56.259Z
+Nome Jogador: Joao Jogada do Jogador: Pedra Jogada da Máquina: Tesoura Ganhador: Jogador Horário da Partida: 2023-08-03T01:21:07.865Z
