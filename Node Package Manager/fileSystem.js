@@ -1,16 +1,28 @@
-const fsl = require('fs');
+const fs = require('fs');
 
-var data = new Date;
-
-function criarArquivo(nomeJogador, jogadaJogador, jogadaMaquina, ganhador) {
-    fsl.writeFile('/Users/joao/documents/Projeto Jokenpo/Node Package Manager/Partidas.txt', 'Nome Jogador: ' + nomeJogador + ' ' +
-    'Jogada do Jogador: ' + jogadaJogador + ' ' + 'Jogada da Máquina: ' + jogadaMaquina + ' ' + 'Ganhador: ' + ganhador + 
-    ' ' + data.getHours() + ':' + data.getMinutes() + ':' + data.getSeconds() + "\n", { flag: 'a+' }, err => {
-        if (err) {
-            console.error(err);
-            return;
-        }
-    });
+const funcaoCallback = err => {
+    if (err) {
+        console.error(err);
+        return;
+    }
 }
 
-module.exports = {criarArquivo};
+function criarArquivo(nomeJogador, jogadaJogador, jogadaMaquina, ganhador) {
+    const caminhoArquivo = './Partidas.txt';
+
+    const horarioAgora = new Date();
+
+    const horarioPartida = horarioAgora.toISOString();
+
+    const dadosArquivo = 'Nome Jogador: ' + nomeJogador + ' ' +
+        'Jogada do Jogador: ' + jogadaJogador + ' ' +
+        'Jogada da Máquina: ' + jogadaMaquina + ' ' +
+        'Ganhador: ' + ganhador + ' ' +
+        'Horário da Partida: ' + horarioPartida + '\n';
+
+    const configuracaoArquivo = { flag: 'a+' };
+
+    fs.writeFile(caminhoArquivo, dadosArquivo, configuracaoArquivo, funcaoCallback);
+}
+
+module.exports = { criarArquivo };

@@ -1,15 +1,16 @@
 const prompt = require("prompt-sync")();
 const fileSystem = require('./fileSystem');
 
-var tiposDeJogadas = ["Pedra", "Papel", "Tesoura"];
-var nomeJogador = prompt("Digite seu nome: ");
-var jogadaJogador = prompt("Digite sua jogada: ");
-var posicaoJogadaMaquina = Math.floor(Math.random() * tiposDeJogadas.length);
+const tiposDeJogadas = ["Pedra", "Papel", "Tesoura"];
+const nomeJogador = prompt("Digite seu nome: ");
+const jogadaJogador = prompt("Digite sua jogada: ");
+const posicaoJogadaMaquina = Math.floor(Math.random() * tiposDeJogadas.length);
+let ganhador = 'Ninguém';
 
 console.log("Jogada da máquina:", tiposDeJogadas[posicaoJogadaMaquina]);
 
 if(jogadaJogador == tiposDeJogadas[posicaoJogadaMaquina]){
-    var ganhador = "Empate";
+    ganhador = "Empate";
     console.log("Ganhador: ", ganhador);   
 }
 else if(jogadaJogador == "Pedra" && tiposDeJogadas[posicaoJogadaMaquina] == "Tesoura"){
