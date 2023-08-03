@@ -1,5 +1,4 @@
 const prompt = require("prompt-sync")();
-const fileSystem = require('../File System/fileSystem');
 
 var tiposDeJogadas = ["Pedra", "Papel", "Tesoura"];
 var nomeJogador = prompt("Digite seu nome: ");
@@ -36,5 +35,3 @@ else if(tiposDeJogadas[posicaoJogadaMaquina] == "Papel" && jogadaJogador == "Ped
     ganhador = "Máquina";
     console.log("Ganhador: ", ganhador);   
 }
-
-fileSystem.criarArquivo(nomeJogador, jogadaJogador, tiposDeJogadas[posicaoJogadaMaquina], ganhador);
